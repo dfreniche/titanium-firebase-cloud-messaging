@@ -82,6 +82,7 @@ public class CloudMessagingModule extends KrollModule
 				if (notificationData != "") {
 					data = new KrollDict(new JSONObject(notificationData));
 					data.put("inBackground", true);
+					notificationData = "";
 				}
 			}
 		} catch (Exception ex) {
