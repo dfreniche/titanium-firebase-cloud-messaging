@@ -86,6 +86,8 @@ public class CloudMessagingModule extends KrollModule
 			}
 		} catch (Exception ex) {
 			Log.e(LCAT, "getLastData" + ex);
+		} finally {
+			notificationData = "";
 		}
 
 		return data;
